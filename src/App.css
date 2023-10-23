@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #000;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.gradientToRight {
+    background: linear-gradient(to right, #000 0%, transparent 60%);
+}
+
+.avtar {
+    display: none;
+}
+
+.avtar-parent:hover .avtar {
+    display: block;
+}
+
+.home-list {
+    display: none;
+}
+
+.parent-homelist:hover .home-list {
+    display: block;
+}
+
+.store-list {
+    display: none;
+}
+
+.parent-storelist:hover .store-list {
+    display: block;
+}
+
+
+.parent-card:hover {
+    /* z-index: 50; */
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.2);
+    transform: scale(1.25);
+    transition: 0.2s all;
+
+
+}
+
+.parent-card {
+    z-index: 0;
+    transition: 0.2s all;
+
+}
+
+.parent-card:hover {
+    z-index: 30;
+    transform: scale3d(1.2, 1.2, 1) perspective(500px);
+}
+
+.parent-card .child-card {
+    /* opacity: 0; */
+    /* transform: translate(20px); */
+    transition: 0.2s;
+}
+
+.parent-card:hover .child-card {
+    /* opacity: 1; */
+    /* transform: translateY(0px); */
+}
+
+.child-card {
+    display: block;
+    /* z-index: 30; */
+}
+
+.parent-card:hover .child-card {
+    display: block;
+
+}
+
+.home-list {
+    display: none !important;
+}
+
+.parent-homelist:hover .home-list {
+    display: block !important;
+}
